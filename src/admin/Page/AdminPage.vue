@@ -1,8 +1,10 @@
 <template>
-  <div v-if="store.loading">Loading...</div>
-  <div v-else>
-    {{ store.pages }}
-  </div>
+  <base-container>
+    <div v-if="store.loading">Loading...</div>
+    <div v-else>
+      {{ store.pages }}
+    </div>
+  </base-container>
 </template>
 
 <script lang="ts" setup>
