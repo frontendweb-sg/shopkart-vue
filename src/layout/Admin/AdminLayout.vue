@@ -1,12 +1,12 @@
 <template>
-  <AppHeader />
   <div class="wrapper">
+    <admin-sidebar />
     <slot />
   </div>
 </template>
 
 <script lang="ts" setup>
-import AppHeader from "./AppHeader.vue";
+import AdminSidebar from "./AdminSidebar.vue";
 </script>
 
 <style></style>

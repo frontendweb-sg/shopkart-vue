@@ -13,15 +13,18 @@ const routes: RouteRecordRaw[] = [
   },
   {
     path: AppRoute.root,
+    meta: { layout: "public" },
     component: () => import(/* webpackChunkName: home*/ "@/views/HomeView.vue"),
   },
   {
     path: AppRoute.about,
+    meta: { layout: "public" },
     component: () =>
       import(/* webpackChunkName: about*/ "@/views/AboutView.vue"),
   },
   {
     path: AppRoute.contact,
+    meta: { layout: "public" },
     component: () =>
       import(/* webpackChunkName:contact */ "@/views/ContactView.vue"),
   },
@@ -29,6 +32,7 @@ const routes: RouteRecordRaw[] = [
     path: AppRoute.admin,
     component: () => import("@/admin/Admin.vue"),
     redirect: "/shopkart/admin/dashboard",
+    meta: { layout: "admin" },
     children: [
       {
         path: AppRoute.adminDashboard,
@@ -71,6 +75,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: AppRoute.notFound,
     name: "Not Found",
+    meta: { layout: "auth" },
     component: () =>
       import(/* webpackChunkName:not-found */ "@/views/NotFoundView.vue"),
   },

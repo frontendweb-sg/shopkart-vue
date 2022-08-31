@@ -1,5 +1,7 @@
+@import "./globals/variables";
 @import "bootstrap/scss/bootstrap.scss";
 
-body {
-  background-color: red;
-}
+// component
+@import "./layout/wrapper";
+@import "./base/init";
+@import "./layout/sidebar";

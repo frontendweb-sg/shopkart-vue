@@ -1,5 +1,4 @@
 import { API } from "@/axios";
-import type { AxiosError } from "axios";
 import { defineStore } from "pinia";
 import { errorHandler } from "./helper";
 
