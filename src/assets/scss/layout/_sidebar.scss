@@ -1,13 +1,18 @@
 .sidebar {
   width: $sidebar-width;
   background-color: $sidebar-bg;
-  padding: $sidebar-padding-vertical $sidebar-padding-horizontal;
   border-right: 1px solid $sidebar-border-color;
   position: $sidebar-position;
   top: 0;
   bottom: 0;
-
+  &-brand {
+    background-color: $primary;
+    a {
+      color: $white;
+    }
+  }
   &-nav {
+    padding: $sidebar-padding-vertical $sidebar-padding-horizontal;
     list-style: none;
     padding-left: 0;
     li {

@@ -1,6 +1,6 @@
 <template>
   <aside class="sidebar">
-    <app-logo />
+    <app-logo class="sidebar-brand" />
     <ul class="sidebar-nav">
       <li class="nav-item" v-for="menu in AdminMenu" :key="menu.id">
         <router-link

@@ -6,6 +6,9 @@
   </div>
 </template>
 
+<script lang="ts">
+export default {};
+</script>
 <script lang="ts" setup>
 const props = withDefaults(
   defineProps<{ to: string | object; brandName: string }>(),
