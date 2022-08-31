@@ -6,7 +6,7 @@
 
 <script lang="ts" setup>
 export interface IProps {
-  full: boolean;
+  full?: boolean;
 }
 
 const props = withDefaults(defineProps<IProps>(), {
@@ -16,5 +16,4 @@ const props = withDefaults(defineProps<IProps>(), {
 const classes = props.full ? "container-fluid" : "container";
 </script>
 
-<style>
-</style>
+<style></style>

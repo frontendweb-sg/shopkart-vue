@@ -1,7 +1,10 @@
 {
   "files": [],
   "compilerOptions": {
-    "isolatedModules": true
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitThis": true
   },
   "references": [
     {

@@ -1,2 +1,4 @@
 import BaseContainer from "./BaseContainer.vue";
-export { BaseContainer };
+import BaseCol from "./BaseCol.vue";
+import BaseRow from "./BaseRow.vue";
+export { BaseContainer, BaseCol, BaseRow };

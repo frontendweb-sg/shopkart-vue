@@ -1,5 +1,6 @@
 <template>
   <base-container>
+    <page-form />
     <div v-if="store.loading">Loading...</div>
     <div v-else>
       {{ store.pages }}
@@ -8,16 +9,15 @@
 </template>
 
 <script lang="ts" setup>
-import { usePage } from "@/store/page";
-import { onMounted } from "@vue/runtime-core";
-const store = usePage();
+import { usePageStore } from "../../store/page";
+import PageForm from "./PageForm.vue";
+
+const store = usePageStore();
 
 console.log("store", store.pages);
 
-onMounted(async () => {
-  await store.getAll();
-});
+// fetch all state
+store.getAll();
 </script>
 
-<style>
-</style>
+<style></style>

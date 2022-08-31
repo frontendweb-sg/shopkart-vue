@@ -9,5 +9,4 @@
 import AppHeader from "./AppHeader.vue";
 </script>
 
-<style>
-</style>
+<style></style>
